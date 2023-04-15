@@ -22,14 +22,14 @@
             <h2 class="city">New York</h2>
             <div class="details"> <!-- container for displaying additional weather information -->
                 <div class="col">  <!-- container for humidity information -->
-                    <img src="images/humidity.png">
+                    <img src="humidity.png">
                     <div>
                         <p class="humidity">50%</p>
                         <p>Humidity</p>
                     </div>
                 </div>
                 <div class="col">  <!-- container for wind speed information -->
-                    <img src="images/wind.png">
+                    <img src="wind.png">
                     <div>
                         <p class="wind">15 km/h</p>
                         <p>Wind Speed</p>
@@ -56,19 +56,19 @@
         document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
         document.querySelector(".wind").innerHTML = data.wind.speed + " Km/h";
     if(data.weather[0].main == "Clouds"){
-        weatherIcon.src = "images/clouds.png";
+        weatherIcon.src = "clouds.png";
     }
     else if(data.weather[0].main == "Clear") {
-        weatherIcon.src = "images/clear.png";
+        weatherIcon.src = "clear.png";
     }
     else if(data.weather[0].main == "Rain") {
-        weatherIcon.src = "images/rain.png";
+        weatherIcon.src = "rain.png";
     }
     else if(data.weather[0].main == "Drizzle") {
-        weatherIcon.src = "images/drizzle.png";
+        weatherIcon.src = "drizzle.png";
     }
     else if(data.weather[0].main == "Mist") {
-        weatherIcon.src = "images/mist.png";
+        weatherIcon.src = "mist.png";
     }
     document.querySelector(".weather").style.display = "block";
     document.querySelector(".error").style.display = "none";
